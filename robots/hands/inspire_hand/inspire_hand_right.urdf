@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <robot name="inspire_hand_right">
+  <link name="base1"/>
+  <joint name="base1" type="fixed">
+    <parent link="base1"/>
+    <child link="base"/>
+    <origin xyz="0 0 -0.045" rpy="0 0 0"/>
+  </joint>
   <link name="base"/>
   <joint name="base_joint" type="fixed">
     <parent link="base"/>
